@@ -1,49 +1,64 @@
-# RentRite - Property Management Application
+# 🏠 RentRite - Property Management Application
 
-RentRite is a modern property management application built with Next.js, React, and Tailwind CSS. It helps landlords track properties, tenants, rent payments, and maintenance requests.
+<div align="center">
+  <img src="https://img.shields.io/badge/Next.js-13-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Tailwind-3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+</div>
 
-> **Note:** The backend is not yet developed. This is a frontend-only application with mock data. Backend integration is coming soon.
+<br />
 
-## Features
+> ⚠️ **Note:** The backend is not yet developed. This is a frontend-only application with mock data. Backend integration is coming soon.
 
-- **Property Management**: Add, edit, and track properties
-- **Tenant Management**: Manage tenant information and lease details
-- **Rent Tracking**: Monitor rent payments and generate reports
-- **Maintenance Requests**: Track and manage maintenance tickets
-- **Reports**: Generate monthly income summaries and export data
-- **Responsive Design**: Works on desktop and mobile devices
-- **Dark Mode Support**: Toggle between light and dark themes
+## 📋 Overview
 
-## Prerequisites
+RentRite is a modern property management application that helps landlords track properties, tenants, rent payments, and maintenance requests. Built with cutting-edge technologies, it offers a sleek, responsive interface that works seamlessly on all devices.
+
+## ✨ Features
+
+| Category | Features |
+|----------|----------|
+| 🏢 **Property Management** | Add, edit, and track properties |
+| 👥 **Tenant Management** | Manage tenant information and lease details |
+| 💰 **Rent Tracking** | Monitor rent payments and generate reports |
+| 🔧 **Maintenance Requests** | Track and manage maintenance tickets |
+| 📊 **Reports** | Generate monthly income summaries and export data |
+| 📱 **Responsive Design** | Works on desktop and mobile devices |
+| 🌓 **Dark Mode Support** | Toggle between light and dark themes |
+
+## 🚀 Getting Started
+
+### Prerequisites
 
 - Node.js (v14 or higher)
 - npm (v6 or higher)
 
-## Installation
+### Installation
 
-1. Clone the repository:
-   ```
+1. **Clone the repository:**
+   ```bash
    git clone https://github.com/Kirankumar866/RentRite.git
    cd small-landlord-rent-tracker
    ```
 
-2. Navigate to the frontend directory:
-   ```
+2. **Navigate to the frontend directory:**
+   ```bash
    cd frontend
    ```
 
-3. Install dependencies:
-   ```
+3. **Install dependencies:**
+   ```bash
    npm install
    ```
 
-## Running the Application
+## 🏃‍♂️ Running the Application
 
 ### Development Mode
 
 To run the application in development mode:
 
-```
+```bash
 cd frontend
 npm run dev
 ```
@@ -54,13 +69,13 @@ The application will be available at [http://localhost:3000](http://localhost:30
 
 To build and run the application in production mode:
 
-```
+```bash
 cd frontend
 npm run build
 npm start
 ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 small-landlord-rent-tracker/
@@ -76,26 +91,28 @@ small-landlord-rent-tracker/
 └── README.md                # This file
 ```
 
-## Available Scripts
+## 🛠️ Available Scripts
 
-- `npm run dev`: Starts the development server
-- `npm run build`: Builds the application for production
-- `npm start`: Runs the production build
-- `npm run lint`: Runs ESLint to check for code issues
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Builds the application for production |
+| `npm start` | Runs the production build |
+| `npm run lint` | Runs ESLint to check for code issues |
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 ### PowerShell Command Issues
 
 If you're using PowerShell and encounter errors with `&&` operator, use semicolons instead:
 
-```
+```bash
 cd frontend; npm run dev
 ```
 
 Or run commands separately:
 
-```
+```bash
 cd frontend
 npm run dev
 ```
@@ -104,12 +121,12 @@ npm run dev
 
 If you see security vulnerability warnings, run:
 
-```
+```bash
 cd frontend
 npm audit fix --force
 ```
 
-## Deployment
+## 🚀 Deployment
 
 This application can be deployed to various platforms:
 
@@ -130,31 +147,37 @@ This application can be deployed to various platforms:
 ### Traditional Hosting
 
 1. Build the application:
-   ```
+   ```bash
    cd frontend
    npm run build
    ```
 2. Start the server:
-   ```
+   ```bash
    npm start
    ```
 
-## Backend Development Status
+## 🔄 Backend Development Status
 
 The backend for this application is not yet developed. Currently, the application uses mock data for demonstration purposes. Backend integration with features like:
 
-- User authentication and authorization
-- Persistent data storage
-- Real-time updates
-- File uploads for lease documents
-- Payment processing
+- 🔐 User authentication and authorization
+- 💾 Persistent data storage
+- ⚡ Real-time updates
+- 📄 File uploads for lease documents
+- 💳 Payment processing
 
 is planned for future development.
 
-## License
+## 📝 License
 
 [MIT License](LICENSE)
 
-## Contact
+## 📧 Contact
 
-For questions or support, please contact [kirankumar201018@gmail.com](mailto:kirankumar201018@gmail.com). 
+For questions or support, please contact [kirankumar201018@gmail.com](mailto:kirankumar201018@gmail.com).
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by Kirankumar</p>
+</div> 
