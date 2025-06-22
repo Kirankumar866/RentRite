@@ -1,183 +1,272 @@
-# 🏠 RentRite - Property Management Application
+# RentRite - Property Management Platform
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Next.js-13-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=white" alt="React" />
-  <img src="https://img.shields.io/badge/Tailwind-3-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-</div>
+A modern, responsive property management platform built with Next.js and TypeScript.
 
-<br />
+## 🚀 Quick Start
 
-> ⚠️ **Note:** The backend is not yet developed. This is a frontend-only application with mock data. Backend integration is coming soon.
+1. Navigate to the frontend directory:
 
-## 📋 Overview
-
-RentRite is a modern property management application that helps landlords track properties, tenants, rent payments, and maintenance requests. Built with cutting-edge technologies, it offers a sleek, responsive interface that works seamlessly on all devices.
-
-## ✨ Features
-
-| Category | Features |
-|----------|----------|
-| 🏢 **Property Management** | Add, edit, and track properties |
-| 👥 **Tenant Management** | Manage tenant information and lease details |
-| 💰 **Rent Tracking** | Monitor rent payments and generate reports |
-| 🔧 **Maintenance Requests** | Track and manage maintenance tickets |
-| 📊 **Reports** | Generate monthly income summaries and export data |
-| 📱 **Responsive Design** | Works on desktop and mobile devices |
-| 🌓 **Dark Mode Support** | Toggle between light and dark themes |
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm (v6 or higher)
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Kirankumar866/RentRite.git
-   cd small-landlord-rent-tracker
-   ```
-
-2. **Navigate to the frontend directory:**
    ```bash
    cd frontend
    ```
 
-3. **Install dependencies:**
+2. Install dependencies:
+
    ```bash
    npm install
    ```
 
-## 🏃‍♂️ Running the Application
+3. Run the development server:
 
-### Development Mode
+   ```bash
+   npm run dev
+   ```
 
-To run the application in development mode:
-
-```bash
-cd frontend
-npm run dev
-```
-
-The application will be available at [http://localhost:3000](http://localhost:3000).
-
-### Production Mode
-
-To build and run the application in production mode:
-
-```bash
-cd frontend
-npm run build
-npm start
-```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 📁 Project Structure
 
 ```
-small-landlord-rent-tracker/
-├── frontend/                # Frontend application
-│   ├── public/              # Static assets
-│   │   └── ...
-│   ├── src/                 # Source code
-│   │   ├── app/             # Next.js app directory
-│   │   ├── components/      # Reusable components
-│   │   └── utils/           # Utility functions
-│   ├── package.json         # Frontend dependencies
-│   └── ...
-└── README.md                # This file
+frontend/
+├── src/
+│   ├── app/                 # Next.js App Router pages
+│   │   ├── page.tsx        # Homepage
+│   │   ├���─ properties/     # Properties management
+│   │   ├── tenants/        # Tenants management
+│   │   ├── payments/       # Payment tracking
+│   │   ├── maintenance/    # Maintenance requests
+│   │   ├── reports/        # Financial reports
+│   │   ├── layout.tsx      # Root layout
+│   │   └── globals.css     # Global styles
+│   ├── components/         # Reusable components
+│   │   ├── Navbar.tsx      # Main navigation
+│   │   ├── MobileMenu.tsx  # Mobile navigation
+│   │   └── NavbarThemeToggle.tsx
+│   └── contexts/           # React contexts
+│       └── ThemeContext.tsx
+├── package.json            # Dependencies
+├── tailwind.config.js      # Tailwind CSS config
+├── tsconfig.json          # TypeScript config
+└── next.config.js         # Next.js config
 ```
 
-## 🛠️ Available Scripts
+## ✨ Features
 
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Starts the development server |
-| `npm run build` | Builds the application for production |
-| `npm start` | Runs the production build |
-| `npm run lint` | Runs ESLint to check for code issues |
+- 🏠 **Property Management**: Add, edit, view properties with status tracking
+- 👥 **Tenant Management**: Complete tenant lifecycle with multi-step onboarding
+- 💰 **Payment Tracking**: Payment status monitoring and history
+- 🔧 **Maintenance Requests**: Request management with priority levels
+- 📊 **Financial Reports**: Interactive charts and Excel export
+- 🌙 **Dark/Light Theme**: System-aware theme switching
+- 📱 **Mobile Responsive**: Mobile-first responsive design
+- 📈 **Interactive Charts**: Revenue analytics with Recharts
 
-## 🔧 Troubleshooting
+## 🛠️ Technologies
 
-### PowerShell Command Issues
+- **Frontend**: Next.js 13+ (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **State Management**: React Hooks
+- **File Export**: XLSX library
+- **Icons**: SVG-based icon system
 
-If you're using PowerShell and encounter errors with `&&` operator, use semicolons instead:
+## 📦 Installation & Setup
+
+### Prerequisites
+
+- Node.js 18.0 or later
+- npm or yarn package manager
+
+### Step-by-Step Installation
+
+1. **Extract the project files** to your desired directory
+
+2. **Navigate to the frontend directory**:
+
+   ```bash
+   cd frontend
+   ```
+
+3. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Start development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser** and visit: `http://localhost:3000`
+
+## 🎨 Features Overview
+
+### Navigation
+
+- **Fixed Navigation Bar**: Always accessible across all pages
+- **Mobile Menu**: Collapsible hamburger menu with smooth animations
+- **Theme Toggle**: Seamless dark/light mode switching
+
+### Properties Management
+
+- Property listing with visual cards
+- Add/Edit/View property modals
+- Status tracking (Available, Occupied, Maintenance)
+- Image handling and property details
+
+### Tenants Management
+
+- Complete tenant directory
+- Multi-step application process:
+  - Personal Information
+  - Property Selection
+  - Financial Information
+  - Document Upload
+- Edit/View tenant profiles
+- Lease management
+
+### Payment Tracking
+
+- Payment dashboard with statistics
+- Status tracking (Paid, Pending, Overdue, Partial)
+- Payment history and recording
+- Multiple payment methods support
+
+### Maintenance System
+
+- Request dashboard with priority levels
+- Status management (Open, In-Progress, Completed, Cancelled)
+- Bidirectional status updates
+- Cost tracking and assignment
+
+### Financial Reports
+
+- Interactive revenue charts
+- Monthly revenue trends
+- Revenue by unit and tenant
+- Occupancy analysis
+- Excel export functionality
+
+## 📱 Responsive Design
+
+The application is built with a mobile-first approach:
+
+- **Mobile**: Optimized for phones (320px+)
+- **Tablet**: Enhanced layout for tablets
+- **Desktop**: Full-featured desktop interface
+- **Touch-Friendly**: Appropriate touch targets
+
+## 🎯 Development Commands
 
 ```bash
-cd frontend; npm run dev
-```
-
-Or run commands separately:
-
-```bash
-cd frontend
-npm run dev
-```
-
-### Security Vulnerabilities
-
-If you see security vulnerability warnings, run:
-
-```bash
-cd frontend
-npm audit fix --force
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run type-check   # Run TypeScript compiler
 ```
 
 ## 🚀 Deployment
 
-This application can be deployed to various platforms:
-
 ### Vercel (Recommended)
 
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Vercel will automatically detect Next.js and deploy accordingly
+```bash
+npm i -g vercel
+vercel
+```
 
-### Netlify
+### Other Platforms
 
-1. Push your code to GitHub
-2. Connect your repository to Netlify
-3. Configure build settings:
-   - Build command: `npm run build`
-   - Publish directory: `.next`
+- **Netlify**: Deploy the build output
+- **Docker**: Use provided Dockerfile
+- **Static Hosting**: Configure for static export
 
-### Traditional Hosting
+## 📖 Documentation
 
-1. Build the application:
+- **PRD**: See `RentRite_PRD.md` for detailed product requirements
+- **API Documentation**: Component interfaces and data models
+- **Setup Guide**: Complete installation and configuration
+- **Deployment Guide**: Production deployment instructions
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create `.env.local` in the frontend directory:
+
+```env
+NEXT_PUBLIC_APP_NAME=RentRite
+NEXT_PUBLIC_APP_VERSION=1.0.0
+```
+
+### Customization
+
+- **Styling**: Modify `tailwind.config.js` for theme customization
+- **Components**: Extend components in `src/components/`
+- **Data Models**: Update interfaces in page components
+
+## 🔒 Security
+
+- HTTPS configuration
+- Input validation
+- XSS protection
+- CSRF protection
+- Secure headers
+
+## 📈 Performance
+
+- Automatic code splitting with Next.js
+- Image optimization
+- Bundle optimization
+- React hooks optimization (useCallback, useMemo)
+- Responsive loading
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+1. **Port already in use**:
+
    ```bash
-   cd frontend
+   npm run dev -- --port 3001
+   ```
+
+2. **Dependency issues**:
+
+   ```bash
+   rm -rf node_modules package-lock.json
+   npm install
+   ```
+
+3. **Build cache issues**:
+   ```bash
+   rm -rf .next
    npm run build
    ```
-2. Start the server:
-   ```bash
-   npm start
-   ```
 
-## 🔄 Backend Development Status
+## 🤝 Contributing
 
-The backend for this application is not yet developed. Currently, the application uses mock data for demonstration purposes. Backend integration with features like:
+1. Fork the project
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
 
-- 🔐 User authentication and authorization
-- 💾 Persistent data storage
-- ⚡ Real-time updates
-- 📄 File uploads for lease documents
-- 💳 Payment processing
+## 📄 License
 
-is planned for future development.
+This project is licensed under the MIT License.
 
-## 📝 License
+## 📞 Support
 
-[MIT License](LICENSE)
+For support and questions:
 
-## 📧 Contact
-
-For questions or support, please contact [kirankumar201018@gmail.com](mailto:kirankumar201018@gmail.com).
+- Check the documentation files
+- Review the code comments
+- Refer to the PRD for detailed specifications
 
 ---
 
-<div align="center">
-  <p>Made with ❤️ by Kirankumar</p>
-</div> 
+**RentRite** - Modern Property Management Made Simple
